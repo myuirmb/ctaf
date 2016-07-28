@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CEFTS</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link href="bootstrap/css/archon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap/css/AdminLTE.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- header start -->
+    <header class="navbar navbar-static-top bs-docs-nav" >
+        <div class="container-fluid">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="navbar-brand">CFETS统一终端系统</a>
+                </div>
+            </div>
+
+            <div id="bs-navbar" class="collapse navbar-collapse">
+                <div class="col-md-7 col-xs-7 top-li" style="">
+                    <ul class="nav navbar-nav">
+                        <li><a>窗口</a> </li>
+                        <li><a>设置</a></li>
+                        <li><a>帮助</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-3" style="text-align: right">
+                    <nav class="pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a>xiaoming@hotmail.com</a> </li>
+                            <li><a class="icon-minus-sign" onclick="confrim()"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- 中间部分 开始-->
+    <section style="padding-top: 20px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-10 mid-cont">
+
+                    <!-- 中间的最上面的 tab start -->
+                    <div class="col-lg-12 col-md-12 col-xs-12 mid-cont-12">
+                        <div class="col-md-10  col-ul-lt">
+                            <div class="nav-tabs-custom">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"> <a data-toggle="tab" href="#tab1" aria-expanded="false">tab111</a></li>
+                                    <li> <a data-toggle="tab" href="#tab2" aria-expanded="true">tab222</a></li>
+                                </ul>
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 top-right">
+                            <span class="dropdown" >
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #333333">
+                                    模板<b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">模板A</a></li>
+                                    <li><a href="#">模板B</a></li>
+                                    <li><a href="#">模板C</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">模板D</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">模板E</a></li>
+                                </ul>
+                            </span>
+                            <span class="icon-folder-close" onclick="javascript:$('#saveTemplate').show()"></span>
+
+                            <span  class="dropdown">
+                                <a href="#" class="dropdown-toggle icon-th" data-toggle="dropdown" style="color: #333333">&nbsp;</a>
+                                <ul class="dropdown-menu dropdown-menu-em">
+                                    <li><em></em><em></em><em></em><em></em><em></em><em></em><em></em><em></em></li>
+
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div  id="mid-cont" class="col-lg-12 col-md-12 col-xs-12 mid-cont-12">
+                        <div class="tab-content" >
+                            <!-- tab1 start-->
+                            <div class="tab-pane active" id="tab1">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-bj-od">
+
+                                    <!-- 报价板 start -->
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-bj">
+                                        <div class="panel panel-users">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">报价板
+                                                        <span class="pull-right">
+                                                            <a  href="#"  class="panel-settings"><i class="icon-cog"></i></a>
+                                                            <a  href="#"  class="panel-close"><i class=" icon-collapse"></i></a>
+                                                        </span>
+                                                </h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="small-box bg-green">
+                                                    <div class="inner">
+                                                        <h3> 6.81428
+                                                            <!--<sup style="font-size: 20px">%</sup>-->
+                                                        </h3>
+                                                        <p>Test</p>
+                                                    </div>
+                                                    <div class="icon"><i class="ion ion-stats-bars" style="background-image: url('images/defautl1_03.png')"></i></div>
+                                                    <a class="small-box-footer" href="#">
+                                                        More info
+                                                        <i class="icon-circle-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <div class="small-box bg-green">
+                                                    <div class="inner">
+                                                        <h3> 6.81428
+                                                            <!--<sup style="font-size: 20px">%</sup>-->
+                                                        </h3>
+                                                        <p>Test</p>
+                                                    </div>
+                                                    <div class="icon"><i class="ion ion-stats-bars" style="background-image: url('images/defautl1_03.png')"></i></div>
+                                                    <a class="small-box-footer" href="#">
+                                                        More info
+                                                        <i class="icon-circle-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- 报价板 end -->
+
+                                    <!-- 订单 sart-->
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-order">
+                                        <div class="panel panel-users">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">订单
+                                                        <span class="pull-right">
+                                                            <a  href="#"  class="panel-settings"><i class="icon-cog"></i></a>
+                                                            <a  href="#"  class="panel-close"><i class=" icon-collapse"></i></a>
+                                                        </span>
+                                                </h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="nav-tabs-custom">
+                                                    <ul class="nav nav-tabs">
+                                                        <li class="active"><a data-toggle="tab" href="#order-management" aria-expanded="true">订单管理</a></li>
+                                                        <li><a data-toggle="tab" href="#order" aria-expanded="false">订单</a></li>
+                                                    </ul>
+
+                                                    <div class="tab-content">
+                                                        <div id="order-management" class="tab-pane active">
+                                                            <table class="table users-table table-condensed table-hover ">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th >Avatar</th>
+                                                                    <th  class="visible-lg">First Name</th>
+                                                                    <th class="visible-lg">Last Name</th>
+                                                                    <th class="visible-lg">Email</th>
+                                                                    <th>Username</th>
+                                                                    <th>操作</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td>aa</td>
+                                                                    <td class="visible-lg">John </td>
+                                                                    <td class="visible-lg">Deo</td>
+                                                                    <td class="visible-lg">johndeo@example.com</td>
+                                                                    <td>@johndeo</td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-info btn-xs"><i class="icon-envelope"></i></button>
+                                                                        <button type="button" class="btn btn-info btn-xs"><i class="icon-eye-open"></i></button>
+                                                                        <button type="button" class="btn btn-info btn-xs"><i class="icon-edit"></i></button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>aa</td>
+                                                                    <td class="visible-lg">John </td>
+                                                                    <td class="visible-lg">Deo</td>
+                                                                    <td class="visible-lg">johndeo@example.com</td>
+                                                                    <td>@johndeo</td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-info btn-xs"><i class="icon-envelope"></i></button>
+                                                                        <button type="button" class="btn btn-info btn-xs"><i class="icon-eye-open"></i></button>
+                                                                        <button type="button" class="btn btn-info btn-xs"><i class="icon-edit"></i></button>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                        <div id="order" class="tab-pane">
+                                                            <table class="table users-table table-condensed table-hover ">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th  class="visible-lg">#</th>
+                                                                    <th >Avatar</th>
+                                                                    <th  class="visible-lg">First Name</th>
+                                                                    <th class="visible-lg">Last Name</th>
+                                                                    <th class="visible-lg">Email</th>
+                                                                    <th>Username</th>
+                                                                    <th>&nbsp;</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="visible-lg">2</td>
+                                                                    <td><img src="images/theme/avatarOne.png" alt=" " class="avatar"></td>
+                                                                    <td class="visible-lg">John </td>
+                                                                    <td class="visible-lg">Deo</td>
+                                                                    <td class="visible-lg">johndeo@example.com</td>
+                                                                    <td>@johndeo</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 订单 end-->
+                                    <!-- 交易日志  交易查询 start -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-bj2">
+                                        <!-- 交易日志 start  -->
+                                        <div class="col-lg-6 col-md-6 col-sm-6"  style="padding-left:0;padding-right: 0">
+                                            <div class="panel panel-users">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title"> 交易日志
+                                                            <span class="pull-right">
+                                                                <a  href="#"  class="panel-settings"><i class="icon-cog"></i></a>
+                                                                <a  href="#"  class="panel-close"><i class=" icon-collapse"></i></a>
+                                                            </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="panel-body" style="padding-left: 0;padding-right: 0">
+                                                    <table class="table users-table table-condensed table-hover" >
+                                                        <thead>
+                                                        <tr>
+                                                            <th  class="visible-lg">First Name</th>
+                                                            <th class="visible-lg">Last Name</th>
+                                                            <th class="visible-lg">Email</th>
+                                                            <th>Username</th>
+                                                            <th>操作</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="visible-lg">John </td>
+                                                            <td class="visible-lg">Deo</td>
+                                                            <td class="visible-lg">joho@example.com</td>
+                                                            <td>@johndeo</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-envelope"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-eye-open"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-edit"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="visible-lg">John </td>
+                                                            <td class="visible-lg">Deo</td>
+                                                            <td class="visible-lg">joho@example.com</td>
+                                                            <td>@johndeo</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-envelope"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-eye-open"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-edit"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 交易日志 end  -->
+
+                                        <!-- 交易查询 start-->
+                                        <div class="col-lg-6 col-md-6 col-sm-6"  style="padding-right: 0">
+                                            <div class="panel panel-users">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title"> 交易查询
+                                                            <span class="pull-right">
+                                                                <a  href="#"  class="panel-settings"><i class="icon-cog"></i></a>
+                                                                <a  href="#"  class="panel-close"><i class=" icon-collapse"></i></a>
+                                                            </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="panel-body" style="padding-left: 0;padding-right: 0">
+                                                    <table class="table users-table table-condensed table-hover" >
+                                                        <thead>
+                                                        <tr>
+                                                            <th  class="visible-lg">First Name</th>
+                                                            <th class="visible-lg">Last Name</th>
+                                                            <th class="visible-lg">Email</th>
+                                                            <th>Username</th>
+                                                            <th>操作</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="visible-lg">John </td>
+                                                            <td class="visible-lg">Deo</td>
+                                                            <td class="visible-lg">joho@example.com</td>
+                                                            <td>@johndeo</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-envelope"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-eye-open"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-edit"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="visible-lg">John </td>
+                                                            <td class="visible-lg">Deo</td>
+                                                            <td class="visible-lg">joho@example.com</td>
+                                                            <td>@johndeo</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-envelope"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-eye-open"></i></button>
+                                                                <button type="button" class="btn btn-info btn-xs"><i class="icon-edit"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 交易查询  end-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tab1 end-->
+                           <!-- tab2 start -->
+                           <div class="tab-pane col-lg-12 col-md-12 col-sm-12 col-bj-od" id="tab2">2</div>
+                           <!-- tab2 end -->
+                        </div>
+                     </div>
+
+                </div>
+                <!-- 中间的最上面的 tab end -->
+
+
+                <div class="col-lg-2 col-md-2 col-sm-2" id="leftMessages">
+                    <div class="col-lg-12 col-md-12 col-sm-12"  id="top_msg">消息中心</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12" id="bottom_msg" style="padding-left: 0;padding-right: 0">
+                        <div class="box box-primary direct-chat direct-chat-primary">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Direct Chat</h3>
+                                <div class="box-tools pull-right">
+                                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
+                                </div>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body"  id="msgList" style="overflow: hidden">
+                                <!-- Conversations are loaded here -->
+                                <div class="direct-chat-messages" style="margin-bottom: 0; ">
+                                    <!-- Message. Default to the left -->
+                                    <div class="direct-chat-msg">
+                                        <div class="direct-chat-info clearfix">
+                                            <span class="direct-chat-name pull-left">Alexander</span>
+                                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                                        </div>
+                                        <img class="direct-chat-img" src="images/defautl1_03.png" alt="Message User Image"><!-- /.direct-chat-img -->
+                                        <div class="direct-chat-text">
+                                            Is this template really for free? That's unbelievable!
+                                        </div>
+                                    </div>
+
+                                    <div class="direct-chat-msg">
+                                        <div class="direct-chat-info clearfix">
+                                            <span class="direct-chat-name pull-left">Alexander</span>
+                                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                                        </div>
+                                        <!-- /.direct-chat-info -->
+                                        <img class="direct-chat-img" src="images/defautl1_03.png" alt="Message User Image"><!-- /.direct-chat-img -->
+                                        <div class="direct-chat-text">
+                                            Is this template really for free? That's unbelievable!
+                                        </div>
+                                        <!-- /.direct-chat-text -->
+                                    </div>
+                                    <!-- /.direct-chat-msg -->
+
+                                    <!-- Message to the right -->
+                                    <div class="direct-chat-msg right">
+                                        <div class="direct-chat-info clearfix">
+                                            <span class="direct-chat-name pull-right">Sarah</span>
+                                            <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                                        </div>
+                                        <img class="direct-chat-img" src="images/defautl1_03.png" alt="Message User Image"><!-- /.direct-chat-img -->
+                                        <div class="direct-chat-text">
+                                            You better believe it!
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="direct-chat-contacts">
+                                    <ul class="contacts-list">
+                                        <li>
+                                            <a href="#">
+                                                <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Image">
+                                                <div class="contacts-list-info">
+                                                <span class="contacts-list-name">
+                                                  Count Dracula
+                                                  <small class="contacts-list-date pull-right">2/28/2015</small>
+                                                </span>
+                                                <span class="contacts-list-msg">How have you been? I was...</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.contatcts-list -->
+                                </div>
+                                <!-- /.direct-chat-pane -->
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <form action="#" method="post">
+                                    <div class="input-group">
+                                         <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                          <span class="input-group-btn">
+                                            <button type="submit" class="btn btn-primary btn-flat">Send</button>
+                                          </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /.box-footer-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 中间部分 结束-->
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-xs-1"><img src="images/sign.png"/></div>
+            <div class="col-lg-8 col-md-8 col-xs-8"><i class=" icon-time"></i>&nbsp;<i id="time"></i></div>
+            <div class="col-lg-3 col-md-3 col-xs-3 ftt-right">
+                <input type="text"/>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div id="saveTemplate" class="save-back">
+    <div class="saveTemplate" >
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-lg-3 control-label">模板名称</label>
+                <div class="col-lg-9">
+                    <input id="" class="form-control" type="email" placeholder="Type templateName here">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-9 col-lg-offset-3">
+                    <a class="btn btn-info">确认</a>
+                    <a class="btn btn-default" onclick="javascript:$('#saveTemplate').hide()">取消</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+<script>
+    var confrim=function(){
+        var r=confirm("确认退出系统吗？")
+        if(r == true){
+            alert("确定");
+        }
+
+    }
+
+    $(function(){
+        setheight();
+        $(".direct-chat-messages").height($("#msgList").height());
+        setInterval("getNowFormatDate()",1000)
+    })
+
+    function setheight() {
+        var div=document.getElementById("mid-cont");
+        $("#mid-cont").height($(window).height()-170);
+        $("#mid-cont .panel-body").height((div.offsetHeight)/2);
+
+        div.style.overflowY="auto";
+        div.style.overflowX="hidden";
+
+        $("#top_msg").height((div.offsetHeight)/2);
+        $("#bottom_msg").height((div.offsetHeight)/2);
+    }
+
+    function getNowFormatDate() {
+        var date = new Date();
+        var seperator1 = "-";
+        var seperator2 = ":";
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+
+        var minutes=date.getMinutes();
+        var send=date.getSeconds();
+
+        if(send <= 9){
+            send = "0"+send;
+        }
+        if(minutes <= 9){
+            minutes= "0"+minutes;
+        }
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = "0" + strDate;
+        }
+        var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                + " " + date.getHours() + seperator2 +minutes
+                + seperator2 +send;
+
+        $("#time").html(currentdate);
+    }
+</script>
+</html>
