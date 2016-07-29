@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mainApp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
     <script src="js/i18n/en.js"></script>
     <script src="js/main-app.js"></script>
 </head>
-<body>
+<body ng-controller="mainController">
     <!-- header start -->
     <header class="navbar navbar-static-top bs-docs-nav">
         <div class="container-fluid">
@@ -49,7 +49,7 @@
                     <nav class="pull-right">
                         <ul class="nav navbar-nav">
                             <li><a>xiaoming@hotmail.com</a> </li>
-                            <li><a class="icon-minus-sign" onclick="confrim()"></a></li>
+                            <li><a class="icon-minus-sign" ng-click="conf();"></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -66,14 +66,14 @@
             <!--左边9列-->
             <div class="col-lg-9 col-md-9 col-sm-9">
                 <!--左边9列 第一行-->
-                <div class="row">
+                <div id="temptabs" class="row">
                     <div class="col-lg-10 col-md-10 col-sm-10  col-ul-lt">
                         <div class="nav-tabs-custom">
-                            <ul id="tabslabel" class="nav nav-tabs">
+                            <ul id="tablabel" class="nav nav-tabs">
                                 <li class="active"> <a data-toggle="tab" href="#tab1" aria-expanded="false">tab111</a></li>
                                 <li> <a data-toggle="tab" href="#tab2" aria-expanded="true">tab222</a></li>
                             </ul>
-                            <span id="tabsadd" class="glyphicon glyphicon-plus"></span>
+                            <span id="tabadd" class="glyphicon glyphicon-plus" ng-click="addtab()" style="cursor:pointer;"></span>
                         </div>
                     </div>
 
@@ -83,13 +83,13 @@
                                 模板<b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">模板A</a></li>
-                                <li><a href="#">模板B</a></li>
-                                <li><a href="#">模板C</a></li>
+                                <li ng-click="changetemp('a');"><a href="#">模板A</a></li>
+                                <li ng-click="changetemp('b');"><a href="#">模板B</a></li>
+                                <li ng-click="changetemp('c');"><a href="#">模板C</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">模板D</a></li>
+                                <li ng-click="changetemp('d');"><a href="#">模板D</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">模板E</a></li>
+                                <li ng-click="changetemp('e');"><a href="#">模板E</a></li>
                             </ul>
                         </span>
                         <span class="icon-folder-close" onclick="javascript:$('#saveTemplate').show()"></span>
@@ -97,8 +97,16 @@
                         <span class="dropdown">
                             <a href="#" class="dropdown-toggle icon-th" data-toggle="dropdown" style="color: #333333">&nbsp;</a>
                             <ul class="dropdown-menu dropdown-menu-em">
-                                <li><em></em><em></em><em></em><em></em><em></em><em></em><em></em><em></em></li>
-
+                                <li>
+                                    <em ng-click="addwg('price',4);">报价板</em>
+                                    <em ng-click="addwg('order',8);">订单</em>
+                                    <em ng-click="addwg('query',6);">交易查询</em>
+                                    <em ng-click="addwg('log',6);">交易日志</em>
+                                    <em ng-click="addwg('blank',4);">白板一</em>
+                                    <em ng-click="addwg('blank',6);">白板二</em>
+                                    <em ng-click="addwg('blank',8);">白板三</em>
+                                    <em ng-click="addwg('blank',12);">白板四</em>
+                                </li>
                             </ul>
                         </span>
                     </div>
@@ -473,7 +481,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
 
@@ -487,7 +495,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-1 col-md-1 col-xs-1"><img src="images/sign.png" /></div>
-                <div class="col-lg-8 col-md-8 col-xs-8"><i class=" icon-time"></i>&nbsp;<i id="time"></i></div>
+                <div class="col-lg-8 col-md-8 col-xs-8"><i class="icon-time"></i>&nbsp;<i id="time">{{theTime}}</i></div>
                 <div class="col-lg-3 col-md-3 col-xs-3 ftt-right">
                     <input type="text" />
                 </div>
@@ -517,67 +525,3 @@
 
 </body>
 </html>
-
-<script>
-    var confrim = function () {
-        var r = confirm("确认退出系统吗？")
-        if (r == true) {
-            alert("确定");
-        }
-
-    }
-
-    $(function () {
-        //setheight();
-        //$(".direct-chat-messages").height($("#msgList").height());
-        setInterval("getNowFormatDate()", 1000);
-        $('#tabcontent').css({ 'overflow-y': 'auto', 'overflow-x': 'hidden', 'padding': '5px', 'height': ($(window).height() - 146) + 'px' });
-
-        $("#top_msg,#bottom_msg").height(($(window).height() - 110) / 2);
-        $(".direct-chat-messages,.msg-body").css({ 'height': (($(window).height() - 245) / 2) + 'px' });
-
-    })
-
-
-
-    function setheight() {
-        var div = document.getElementById("mid-cont");
-        $("#mid-cont").height($(window).height() - 170);
-        $("#mid-cont .panel-body").height((div.offsetHeight) / 2);
-
-        div.style.overflowY = "auto";
-        div.style.overflowX = "hidden";
-
-        $("#top_msg").height((div.offsetHeight) / 2);
-        $("#bottom_msg").height((div.offsetHeight) / 2);
-    }
-
-    function getNowFormatDate() {
-        var date = new Date();
-        var seperator1 = "-";
-        var seperator2 = ":";
-        var month = date.getMonth() + 1;
-        var strDate = date.getDate();
-
-        var minutes = date.getMinutes();
-        var send = date.getSeconds();
-
-        if (send <= 9) {
-            send = "0" + send;
-        }
-        if (minutes <= 9) {
-            minutes = "0" + minutes;
-        }
-        if (month >= 1 && month <= 9) {
-            month = "0" + month;
-        }
-        if (strDate >= 0 && strDate <= 9) {
-            strDate = "0" + strDate;
-        }
-        var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
-                + " " + date.getHours() + seperator2 + minutes
-                + seperator2 + send;
-
-        $("#time").html(currentdate);
-    }
-</script>

@@ -169,10 +169,12 @@ sup {
 }
 
 .dropdown-menu-em li em {
-    width: 55px;
+    width: 65px;
     height: 30px;
     display: inline-block;
     border: 1px solid #39cccc;
+    text-align:center;
+    line-height:30px;
     margin: 5px;
 }
 
