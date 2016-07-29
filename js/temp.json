@@ -1,0 +1,122 @@
+﻿{
+  "a": [
+
+    {
+      "name": "tab1",
+      "wg": [
+        {
+          "id": "order",
+          "col": 12
+        },
+        {
+          "id": "price",
+          "col": 4
+        },
+        {
+          "id": "",
+          "col": 8
+        },
+        {
+          "id": "query",
+          "col": 6
+        },
+        {
+          "id": "log",
+          "col": 6
+        }
+      ]
+    },
+
+    {
+      "name": "tab2",
+      "wg": [
+        {
+          "id": "price",
+          "col": 4
+        },
+        {
+          "id": "blank",
+          "col": 8
+        }
+      ]
+    }
+
+  ],
+
+  "b": [
+
+    {
+      "name": "tab1",
+      "wg": [
+        {
+          "id": "query",
+          "col": 6
+        },
+        {
+          "id": "log",
+          "col": 6
+        },
+        {
+          "id": "price",
+          "col": 4
+        },
+        {
+          "id": "blank",
+          "col": 8
+        }
+      ]
+    },
+
+    {
+      "name": "tab2",
+      "wg": [
+        {
+          "id": "order",
+          "col": 12
+        },
+        {
+          "id": "price",
+          "col": 4
+        },
+        {
+          "id": "blank",
+          "col": 8
+        }
+      ]
+    },
+
+    {
+      "name": "tab3",
+      "wg": [
+        {
+          "id": "order",
+          "col": 12
+        },
+        {
+          "id": "price",
+          "col": 4
+        },
+        {
+          "id": "",
+          "col": 8
+        },
+        {
+          "id": "query",
+          "col": 6
+        },
+        {
+          "id": "log",
+          "col": 6
+        }
+      ]
+    },
+
+    {
+      "name": "tab4",
+      "wg": [ ]
+    }
+
+  ]
+
+
+}
