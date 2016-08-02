@@ -169,13 +169,13 @@ sup {
 }
 
 .dropdown-menu-em li em {
-    width: 65px;
+    width: 72px;
     height: 30px;
     display: inline-block;
     border: 1px solid #39cccc;
     text-align:center;
     line-height:30px;
-    margin: 5px;
+    margin: 5px 2px;
 }
 
 .panel-users > .panel-heading {
@@ -302,16 +302,17 @@ footer {
 }
 
     .ftt-right input {
-        background-image: url('../images/search.png');
-        background-repeat: no-repeat;
+        background:url('../images/search.png') no-repeat center right;
         background-color: #525D68;
         width: 70%;
         height: 32px;
         border: 0;
         border-radius: 3px;
-        background-position: 5px;
     }
 
 footer i {
     font-style: normal;
 }
+
+input::-ms-clear{display: none;}
+input::-ms-reveal{display: none;}

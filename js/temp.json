@@ -1,8 +1,38 @@
 ﻿{
-  "a": [
-
+  "init": [
     {
-      "name": "tab1",
+      "name": "tab111",
+      "wg": [
+        {
+          "id": "price",
+          "col": 4
+        },
+        {
+          "id": "order",
+          "col": 8
+        },
+        {
+          "id": "query",
+          "col": 6
+        },
+        {
+          "id": "log",
+          "col": 6
+        }
+      ]
+    },
+    {
+      "name": "tab222",
+      "wg": [
+
+      ]
+    }
+
+  ],
+
+  "a": [
+    {
+      "name": "tab1534535",
       "wg": [
         {
           "id": "order",
